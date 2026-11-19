@@ -1,7 +1,7 @@
 
 const DATA = {
   name: "Naga Dinesh",
-  logo: "MND",
+  logo: "MN",
 
   roles: [
     "Software Developer",
@@ -42,7 +42,7 @@ const DATA = {
     ],
 
     stats: [
-      { n: 3, label: "Major Projects" },
+      { n: 2, label: "Major Projects" },
       { n: 8.03, label: "B.Tech CGPA" },
       { n: 2, label: "Certifications" },
       { n: 2026, label: "Graduation Year" }
