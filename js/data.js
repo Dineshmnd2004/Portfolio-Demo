@@ -1,7 +1,7 @@
 
 const DATA = {
   name: "Naga Dinesh",
-  logo: "MN",
+  logo: "MND",
 
   roles: [
     "Software Developer",
