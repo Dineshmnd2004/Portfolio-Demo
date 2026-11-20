@@ -116,7 +116,7 @@ const DATA = {
       ],
 
       live: "#",
-      github: "https://github.com/Dineshmnd2004"
+      github: "https://github.com/Dineshmnd2004/Sweet-Delights"
     },
 
     {
@@ -156,7 +156,14 @@ const DATA = {
     }
   ],
 
-  coding: [],
+  coding: [
+    {
+      name: "LeetCode",
+      icon: "LeetCode",
+      label: "Problem Solving & Coding Practice",
+      url: "https://leetcode.com/u/mndinesh/"
+    }
+  ],
 
   experience: [
     {

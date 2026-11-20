@@ -40,8 +40,26 @@
     return '<div class="ac rv ' + dirs[i % 3] + '"><span class="yr">' + esc(a.year) + '</span><h3>' + esc(a.title) + '</h3><p>' + esc(a.desc) + '</p></div>';
   }).join('');
 
+  /* ---------- coding profiles ---------- */
   $('#codingGrid').innerHTML = D.coding.map(function (c) {
-    return '<a class="cp rv Z" style="--p:' + c.percent + '" href="' + esc(c.url) + '" target="_blank" rel="noopener"><div class="ring">' + ZERO_SVG + '<b data-n="' + c.count + '">0</b></div><h3>' + esc(c.name) + '</h3><small>' + esc(c.label) + '</small><span class="vp">View profile ↗</span></a>';
+    return `
+    <a class="cp cp-link rv Z"
+       href="${esc(c.url)}"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <span class="cp-icon">
+        ${I[c.icon] || M('LC', 9)}
+      </span>
+
+      <span class="cp-info">
+        <h3>${esc(c.name)}</h3>
+        <small>${esc(c.label)}</small>
+        <span class="vp">View Profile ↗</span>
+      </span>
+
+    </a>
+  `;
   }).join('');
 
   $('#tl').innerHTML = D.experience.map(function (e) {

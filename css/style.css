@@ -1552,3 +1552,83 @@ footer {
     height: 72px;
   }
 }
+
+/* ---------- Coding Profile Cards ---------- */
+
+.cps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.cp.cp-link {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 145px;
+  padding: 26px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.cp-link .cp-icon {
+  flex: 0 0 65px;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  color: white;
+  background: linear-gradient(135deg, var(--a), var(--b));
+  font-size: 20px;
+  font-weight: 800;
+  transition: transform .3s;
+}
+
+.cp-link .cp-icon svg {
+  width: 42px;
+  height: 42px;
+}
+
+.cp-link .cp-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cp-link h3 {
+  grid-column: auto;
+  grid-row: auto;
+  font-size: 1.25rem;
+}
+
+.cp-link small {
+  grid-column: auto;
+  grid-row: auto;
+  margin: 0;
+}
+
+.cp-link .vp {
+  grid-column: auto;
+  grid-row: auto;
+  justify-self: start;
+  margin-top: 7px;
+}
+
+.cp-link:hover .cp-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+@media (max-width: 500px) {
+  .cp.cp-link {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .cp-link .cp-icon {
+    flex-basis: 55px;
+    width: 55px;
+    height: 55px;
+  }
+}
